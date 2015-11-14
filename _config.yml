@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /jekyll-lesson
+exclude: ['README.md']
