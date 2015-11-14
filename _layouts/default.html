@@ -1,9 +1,18 @@
-{% include header.html %}
-{% include nav.html %}
-<div id="container">
-<div id="content">
+<!DOCTYPE html>
+<html lang='en-ca'>
+<head>
+	<meta charset='utf-8'>
+	<title>planets</title>
+</head>
+<body>
+<strong>planets</strong>
+<nav>
+	<ul>
+		<li><a href='{{site.baseurl}}/index.html'>home</a></li>
+		<li><a href='{{site.baseurl}}/news.html'>news</a></li>
+	</ul>
+</nav>
 {{content}}
-{% include sidebar.html %}
-</div><!--content-->
-</div><!--container-->
-{% include footer.html %}
+
+</body>
+</html>
