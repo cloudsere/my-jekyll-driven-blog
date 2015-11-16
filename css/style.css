@@ -17,7 +17,7 @@ img {border:none;}
 
 #container {overflow:auto;width:960px;margin:0 auto;padding:3px;background:url('{{site.baseurl}}/img/contentbg.png');}
 #content { width:960px;min-height:400px;margin:0 auto;background:#fff;}
-#contentleft { overflow:scroll;width:580px;float:left;margin-right:20px;padding:20px;}
+#contentleft { overflow:auto;width:580px;float:left;margin-right:20px;padding:20px;}
 #contentleft h1 { font-size:30px;margin-top:0;}
 
 #sidebar { width:280px;float:left;padding:20px;}
