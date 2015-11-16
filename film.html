@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: film
 ---
  <div id="contentleft">
-<h1>film</h1>
+<h1>老婆爱写影评</h1>
 <ul>
 	{% for film in site.categories.film %}
 	<li>
 		<a href="{{site.baseurl}}{{film.url}}">{{film.title}}</a>
-		<p>{{film.date}}</p>
+		<p>{{film.meta}}</p>
 	</li>
 	{% endfor %}
 </ul>

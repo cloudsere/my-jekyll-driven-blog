@@ -1,5 +1,5 @@
 ---
-layout: excel
+layout: excel-article
 title:  "Welcome to Jekyll!"
 date:   2015-11-16 10:32:27 +0800
 categories: excel

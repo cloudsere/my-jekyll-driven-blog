@@ -2,11 +2,11 @@
 layout: excel
 ---
  <div id="contentleft">
-<h1>Tutorials</h1>
+<h1>excel</h1>
 <ul>
 	{% for excel in site.categories.excel  %}
 	<li>
-		<a href="">{{excel.title}}</a>
+		<a href="{{site.baseurl}}{{excel.url}}">{{excel.title}}</a>
 		<p>{{excel.date}}</p>
 	</li>
 	{% endfor %}
