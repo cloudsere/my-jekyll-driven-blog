@@ -3,4 +3,12 @@ layout: default
 ---
  <div id="contentleft">
 <h1>film</h1>
+<ul>
+	{% for film in site.categories.film %}
+	<li>
+		<a href="{{site.baseurl}}{{film.url}}">{{film.title}}</a>
+		<p>{{film.date}}</p>
+	</li>
+	{% endfor %}
+</ul>
 </div>
