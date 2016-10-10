@@ -12,6 +12,12 @@ img {border:none;}
 ul.post{
   padding:10px 50px;
 }
+
+@media (max-width: 400px) {
+  ul.post{
+  padding:10px 0px;
+}
+}
 ul.post a{
   color:#a94442;
 }
@@ -25,8 +31,6 @@ ul.post .meta {
   margin-bottom: 16px;
   color: #8d8d8d;
 }
-
-
 
 header,article{
   display: inline;
