@@ -5,7 +5,7 @@ layout: default
  	<ul class="post">
 	{% for python in site.categories.python %}
 		<li>
-		<h3><a href="{{site.baseurl}}{{post.url}}">{{python.title}}</a></h3>
+		<h3><a href="{{site.baseurl}}{{python.url}}">{{python.title}}</a></h3>
 		<span class="meta">{{python.date | date_to_string}}</span>
 		<p> {{ python.excerpt }}</p>
 		</li>

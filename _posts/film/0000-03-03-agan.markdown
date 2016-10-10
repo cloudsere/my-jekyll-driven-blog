@@ -1,5 +1,5 @@
 ---
-layout: film-article
+layout: article
 title:  "《阿甘正传》：兼有飘忽不定和宿命注定的人生 "
 date:   2015-11-16 10:32:27 +0800
 categories: film

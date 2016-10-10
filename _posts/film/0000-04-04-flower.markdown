@@ -1,5 +1,5 @@
 ---
-layout: film-article
+layout: article
 title:  " 我们仍未知道那天所看见的花的名字 "
 date:   2015-11-16 10:32:27 +0800
 categories: film

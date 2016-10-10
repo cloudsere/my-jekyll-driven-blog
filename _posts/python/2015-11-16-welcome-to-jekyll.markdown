@@ -1,25 +1,45 @@
 ---
-layout: python
-title:  "Welcome to Jekyll!"
-date:   2015-11-16 10:32:27 +0800
+layout: article
+title:  "使用beautifulsoup抓取大众点评广州美食"
+date:   2016-10-1 10:32:27 +0800
 categories: python
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
+#### 伪装浏览器
+大众点评是反爬虫的，所以需要伪装成浏览器。
+首先引入需要用到的模块
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+import urllib.request
+from bs4 import BeautifulSoup
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+接着就是伪装
+{% highlight ruby %}
+headers = {
+    'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'
+}
+url = "http://www.dianping.com/search/category/4/10/p" 
+page = urllib.request.Request(url, headers = headers)
+{% endhighlight %}
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+***
+
+#### 使用bs4获取店铺链接
+{% highlight ruby %}
+soupDp = BeautifulSoup(response,'lxml')
+shop = soupDp.find_all(attrs={'data-hippo-type':'shop'})
+{% endhighlight %}
+
+***
+
+####遍历
+基本功能做完以后就需要遍历，游客登录可以查看50页的店铺
+{% highlight ruby %}
+for m in range(0, 50):
+	url = "http://www.dianping.com/search/category/4/10/p" + str(m)
+{% endhighlight %}
+
+***
+
+####结果
+抓取了750条店铺链接～有了这些链接，获取店铺的名称、地址等等就很方便啦
+![有帮助的截图]({{ site.url }}/img/dianping.png)

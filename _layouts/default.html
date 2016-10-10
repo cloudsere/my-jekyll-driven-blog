@@ -1,31 +1,30 @@
    {% include header.html %}
-
-
- 
 	<header class="col-md-4" id="sidebar" >
-		
-	</div>
 	</header>
+
 
 	<article class="col-md-8" >
 		
+		<div class="postright">
   		<a href=''><img src='{{site.baseurl}}/img/logo.png' class="img-responsive" alt='logo'/></a>
 
   		<div id="navigation">	
-			<ul>
+		<ul>
+
 		<li><a href='{{site.baseurl}}/' class="{% if page.url == '/' %}current{% endif %}">home</a></li>
 		
 		<li><a href='{{site.baseurl}}/python.html'  class="{% if page.url == '/python.html' %}current{% endif %}">python</a></li>
-		<li><a href='{{site.baseurl}}/excel.html'  class="{% if page.url contains 'excel' or page.url contains 'recently-written' %}current{% endif %}">excel</a></li>
+		<li><a href='{{site.baseurl}}/js.html'  class="{% if page.url contains 'js' or page.url contains 'recently-written' %}current{% endif %}">js</a></li>
 		<li><a href='{{site.baseurl}}/film.html'  class="{% if page.url contains 'film' %}current{% endif %}">film</a></li>
 		
-			</ul>
+		</ul>
 		</div>
 
   		{{content}}
-  		{% include footer.html %}
-
+  		</div>
+  	 {% include footer.html %}
 	 </article>
+	
 	
 
 

@@ -3,9 +3,9 @@ layout: default
 ---
   <div class="postcontainer">
 
-  <div>
-  	<ul class="post">
-	{% for post in site.posts %}
+  <div style="text-align:center;">
+  	<ul class="post" style="text-align:left;">
+	{% for post in paginator.posts %}
 		<li>
 		<h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
 		<span class="meta">{{post.date | date_to_string}}</span>
@@ -13,6 +13,47 @@ layout: default
 		</li>
 	{% endfor %}
 	</ul>
+
+
+	{% if paginator.total_pages > 1 %}
+	<ul class="pagination">
+
+		<!--分页 previous-->
+  		{% if paginator.previous_page %}
+    	<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+  		
+  		{% else %}
+    		<li><span>&laquo; Prev</span></li>
+  		{% endif %}
+
+  		<!--分页 页码-->
+  		{% for page in (1..paginator.total_pages) %}
+
+    		{% if page == paginator.page %}
+      		<li><a href="＃">{{ page }}</a></li>
+
+    		{% elsif page == 1 %}
+      		<li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+
+    		{% else %}
+      		<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    		{% endif %}
+
+  		{% endfor %}
+
+  		<!--分页 next-->
+  		{% if paginator.next_page %}
+    		<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a><li>
+
+  		{% else %}
+  		  <li><span>Next &raquo;</span><li>
+  		{% endif %}
+
+	</ul>
+	{% endif %}
+
+
+
 </div>
 
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: film-article
+layout: article
 title:  "《舞出我人生》影评 "
 date:   2015-11-16 10:32:27 +0800
 categories: film

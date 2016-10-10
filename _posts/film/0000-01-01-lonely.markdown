@@ -1,5 +1,5 @@
 ---
-layout: film-article
+layout: article
 title:  "《寂寞芳心》：寂寞是种不治之症，也许？"
 date:   2015-11-16 10:32:27 +0800
 categories: film

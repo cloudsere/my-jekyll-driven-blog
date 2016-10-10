@@ -1,3 +1,6 @@
 markdown: kramdown
 baseurl: ''
 exclude: ['README.md']
+paginate: 3
+paginate_path: "page:num"
+gems: [jekyll-paginate]

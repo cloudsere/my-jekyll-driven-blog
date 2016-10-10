@@ -26,6 +26,8 @@ ul.post .meta {
   color: #8d8d8d;
 }
 
+
+
 header,article{
   display: inline;
   vertical-align: top;
@@ -67,6 +69,11 @@ article {
   width: 65%;
   overflow-x: hidden;
   float:right;
+  text-align:center;
+}
+
+article > .postright{
+  text-align:left;
 }
 
 @media (max-width: 960px) {
@@ -76,8 +83,18 @@ article {
   }
 }
 
+#footer p {
+  font-weight:bold;
+}
+
+#footer {
+
+  margin:0 10%;
+}
+
 #navigation {
       position:relative;
+      top:6px;
       bottom:6px;
     }
 
@@ -103,11 +120,6 @@ article {
   background-color:white;}
 
 
-#footer {margin:0 auto;text-align: center;}
-#footer p {font-weight:bold;}
-#footer ul {margin:15px 0 0 0;padding:0;list-style-type: none;} 
-.nav-footer > li {display:inline;margin-right:5px;}
-.nav-footer > li a {text-transform:uppercase;text-decoration: none;}
-.nav-footer > li a:hover  {text-decoration: underline; }
+
 
 

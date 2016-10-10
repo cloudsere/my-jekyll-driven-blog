@@ -1,0 +1,15 @@
+---
+layout: default
+---
+ <div>
+
+<ul class = "post">
+	{% for js in site.categories.js  %}
+	<li >
+		<h3><a href="{{site.baseurl}}{{js.url}}">{{js.title}}</a></h3>
+		<p>{{js.date | date_to_string}}</p>
+		<p> {{ js.excerpt }}</p>
+	</li>
+	{% endfor %}
+</ul>
+</div>
