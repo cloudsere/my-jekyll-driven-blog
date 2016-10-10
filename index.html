@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-  <div>
+  <div class="postcontainer">
 
-  <h1>This is Lesley's studing diary<br> AND Sparkle's film diary</h1>
-  <p>
-  Today, I have a lesson on YouTube , studying how to creat a website on github.
-  This is my note : there's a good foreign website
-  <a href="https://www.namecheap.com/">https://www.namecheap.com/</a>
-</p>
-</div><!--contentleft-->
+  <div>
+  	<ul class="post">
+	{% for post in site.posts %}
+		<li>
+		<h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+		<span class="meta">{{post.date | date_to_string}}</span>
+		<p> {{ post.excerpt }}</p>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
+
+</div>

@@ -1,18 +1,18 @@
 ---
-layout: film
+layout: default
 ---
  <div>
 
-<ul class="post-list">
+<ul class="post">
 	
 	{% assign counter = 0 %}
 	{% for film in site.categories.film %}
 	{% assign counter = counter | plus: 1 %}
-	<li>
+	<li >
 		
-		<a href="{{site.baseurl}}{{film.url}}" class="post-title">{{film.title}}</a>
-		
-		<p>{{film.meta}}</p>
+		<h3><a href="{{site.baseurl}}{{film.url}}">{{film.title}}</a></h3>
+		<span class="meta">{{film.date | date_to_string}}</span>
+		<p> {{ film.excerpt }}</p>
 	</li>
 	
 	{% endfor %}

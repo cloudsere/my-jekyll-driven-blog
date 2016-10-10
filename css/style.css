@@ -8,11 +8,23 @@ body {
 	  font:14px Helvetica,Arial,Sans-serif;
 	  overflow-x: hidden;
 }
-
-a { color:#4f4f4f;
-	text-decoration:none;
-}
 img {border:none;}
+ul.post{
+  padding:10px 50px;
+}
+ul.post a{
+  color:#a94442;
+}
+ul.post li {
+  list-style-type: none;
+  border-bottom: 1px solid #eeeeee;
+}
+
+ul.post .meta {
+  display: block;
+  margin-bottom: 16px;
+  color: #8d8d8d;
+}
 
 header,article{
   display: inline;
@@ -64,16 +76,34 @@ article {
   }
 }
 
-#navigation {position:relative;bottom:6px;}
-#navigation ul { margin:0;padding:0;list-style-type: none;}
-#navigation ul li { display:inline;margin-right:3px;}
-#navigation ul li a { background:#fbe49b;text-decoration:none;padding:10px 10px 6px 10px;text-transform:uppercase;}
-#navigation ul li current_page_item a,#navigation ul li a:hover{ color :#3f312e;border-left:1px solid #fff;border-top:1px solid #fff;border-right:1px solid #fff;background:white;}
+#navigation {
+      position:relative;
+      bottom:6px;
+    }
 
-.current {font-weight:bold;font-size:16px;background-color:white;}
+#navigation ul li { display:inline;}
+#navigation ul li a { 
+  background:#a94442;
+  color:white;
+  text-decoration:none;
+  padding:10px 10px 6px 10px;
+  text-transform:uppercase;
+}
+#navigation ul li current_page_item a,#navigation ul li a:hover{ 
+  color :#3f312e;
+  border-left:1px solid #fff;
+  border-top:1px solid #fff;
+  border-right:1px solid #fff;
+  background:white;
+}
+
+.current {
+  font-weight:bold;
+  font-size:16px;
+  background-color:white;}
 
 
-#footer { width:960px;margin:0 auto;text-align: center;}
+#footer {margin:0 auto;text-align: center;}
 #footer p {font-weight:bold;}
 #footer ul {margin:15px 0 0 0;padding:0;list-style-type: none;} 
 .nav-footer > li {display:inline;margin-right:5px;}
@@ -81,17 +111,3 @@ article {
 .nav-footer > li a:hover  {text-decoration: underline; }
 
 
-.post-list{
-    display: block;
-    
-}
-.post-list li{
-	list-style-type:none;
-	list-style-position: inside;
-}
-.post-title {
-    display: inline-block;
-    max-width: 75%;
-    color: #272822;
-    
-}
