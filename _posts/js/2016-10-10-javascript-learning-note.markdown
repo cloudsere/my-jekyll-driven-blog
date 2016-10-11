@@ -6,7 +6,7 @@ categories: js
 ---
 > 写作学习笔记读作长文档编辑的一篇博文。人比较懒就把博客新开的一些话写在这里吧。去年开始学着用jekyll和github pages搭建博客，照着youtube一个视频搭建了一个以后彻底荒废。。。直到阿里云催我续费才想起来。现在想着把博客重新用起来，所以用了两天的时间换了样式，添加了分页的功能，明天再加一个评论的功能吧。不说太多计划，免得flag立的飞起，还有太多要学习的东西呢。如果你看到了这个小小的博客，我想说，欢迎来到我的小世界。
 
-####attr()函数
+#### attr()函数
 {% highlight ruby %}
 jQueryObject.attr( attributeName [, value ] ) 
 {% endhighlight %}
@@ -14,7 +14,7 @@ jQueryObject.attr( attributeName [, value ] ) 
 
 ***
 
-####严格等于`===`
+#### 严格等于`===`
 下面的规则用来判断两个值是否===相等：  
 
 1. 如果类型不同，就[不相等]  
@@ -26,7 +26,7 @@ jQueryObject.attr( attributeName [, value ] ) 
 
 ***
 
-####等于`==`
+#### 等于`==`
 根据以下规则：  
 
 1. 如果两个值类型相同，进行 === 比较。  
@@ -40,13 +40,13 @@ jQueryObject.attr( attributeName [, value ] ) 
 
 ***
 
-####`arrayObject.shift()`
+#### `arrayObject.shift()`
 `shift()` 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。
 如果数组是空的，那么 shift() 方法将不进行任何操作，返回 undefined 值。请注意，该方法不创建新数组，而是直接修改原有的 arrayObject。
 
 ***
-
-####函数声明、函数表达式、匿名函数
+ 
+#### 函数声明、函数表达式、匿名函数
 `函数声明:`function fnName () {…};使用function关键字声明一个函数，再指定一个函数名，叫函数声明。
 
 `函数表达式:` var fnName = function () {…};使用function关键字声明一个函数，但未给函数命名，最后将匿名函数赋予一个变量，叫函数表达式，这是最常见的函数表达式语法形式。
@@ -64,7 +64,7 @@ javascript中没用私有作用域的概念，如果在多人开发的项目上�
 
 ***
 
-####for/in循环
+#### for/in循环
 {% highlight ruby %}
 var person = {fname:”John”, lname:”Doe”, age:25} 
 for (x in person){     
@@ -74,13 +74,13 @@ for (x in person){ 
 
 ***
 
-####至少执行一次的循环 do/while循环
+#### 至少执行一次的循环 do/while循环
 {% highlight ruby %}
 do {   x = x + i;   i++; } while(i<5);
 {% endhighlight %}
 ***
 
-####break/continue语句
+#### break/continue语句
 break语句用于跳出循环，跳出上一层for循环
 continue语句用于跳过某一次迭代，然后继续循环中的下一个迭代
 typeof,null,undefined
@@ -92,7 +92,7 @@ null == undefined //true
 
 ***
 
-####javascript数据类型
+#### javascript数据类型
 5种不同的数据类型
 string
 number //type of NaN 返回number
@@ -122,7 +122,7 @@ d = new Date(); Number(d); //返回1404568027739 //和d.getTime()效果一样
 
 ***
 
-####javascript正则表达式
+#### javascript正则表达式
 search()
 var str = “Visit w3cschool”; var n = str.search(/w3cschool/i) //i表示搜索不区分大小写
 replace()
@@ -134,7 +134,7 @@ exec()
 
 ***
 
-####javascript错误
+#### javascript错误
 当JavaScript 引擎执行 JavaScript 代码时，会发生错误，此时引擎会停止，并生成一个错误消息。也就是“JavaScript 将抛出一个错误”
 try和catch
 try{ }catch(err){    alert(err.message); }
@@ -143,13 +143,13 @@ try{    if(x > 10) throw “太大”；    if(x < 5) throw “太小”；�
 
 ***
 
-####javascript调试
+#### javascript调试
 console.log()
 设置断点 debugger
 
 ***
 
-####javascript变量提升
+#### javascript变量提升
 hoisting变量提升
 javascript中，函数及变量的声明都将被提升到函数的最顶部。所以变量可以在使用后声明。
 x = 5; elem.innerHTML = x; var x;
@@ -158,7 +158,7 @@ javascript的严格模式（strict mode）不允许使用未声明的变量
 
 ***
 
-####javascript严格模式
+#### javascript严格模式
 在脚本或函数头部添加“use strict”表达式来声明
 <script> “use strict”; x = 5;//报错，x未定义 </script>
 function myFunction(){ “use strict”; y = 3.14;//报错 }
@@ -172,14 +172,14 @@ function myFunction(){ “use strict”; y = 3.14;//报错 }
 
 ***
 
-####javascript浮点型数据
+#### javascript浮点型数据
 javascript中的所有数据都以64位浮点型数据float来存储
 <script> var x = 0.1; var y = 0.2; var z = x + y; document.getElementById("demo").innerHTML = z; //0.30000000000000004 </script>
 可以用整数的乘除法来解决 var z = (x * 10 + y * 10) / 10
 
 ***
 
-####javascript字符串换行
+#### javascript字符串换行
 var x = "Hello World!”; //报错
 var x = “Hello \ World!”; //字符串换行需要使用反斜杠
 javascript中分号是可选的。如果是一个不完整的语句，比如var，javascript将尝试读取第二行的语句：power = 10；但由于return自身是一个完整的语句，所以javascript将自动关闭语句。
@@ -189,14 +189,14 @@ javascript中分号是可选的。如果是一个不完整的语句，比如var�
 
 ***
 
-####javascript标准
+#### javascript标准
 所有的现代浏览器完全支持 ECMAScript 3（ES3，JavaScript 的第三版，从 1999 年开始）。
 ECMAScript 4（ES4）未通过。
 ECMAScript 5（ES5，2009 年发布），是 JavaScript 最新的官方版本。
 
 ***
 
-####javascript:void(0)
+#### javascript:void(0)
 void func() javascript: void func() void(func()) javascript:void(func())
 <a href="javascript:void(0)">单击此处什么也不会发生</a>
 <a href=“javascript:void(alert(“warning!!!”))”>点我！</a>
@@ -204,7 +204,7 @@ href = “#”和href=“javascript:void(0)”是不一样的 #包含一个位
 
 ***
 
-####javascript代码规范
+#### javascript代码规范
 camelCase
 全局变量和常量为大写 (UPPERCASE )
 通常运算符 ( = + - * / ) 前后需要添加空格
@@ -217,13 +217,13 @@ camelCase
 
 ***
 
-####自调用函数
+#### 自调用函数
 如果表达式后面紧跟 () ，则会自动调用。
 (function (){     var x = “Hello”; })();
 
 ***
 
-####js函数是对象
+#### js函数是对象
 function myFunction(){     return arguments.length; }//argument 对象包含了函数调用的参数数组,返回函数调用时接收的参数个数
 function myFunction(a,b){     return a * b; } var txt = myFunction.toString();
 indexOf 

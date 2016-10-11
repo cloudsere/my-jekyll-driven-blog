@@ -31,7 +31,7 @@ shop = soupDp.find_all(attrs={'data-hippo-type':'shop'})
 
 ***
 
-####遍历
+#### 遍历
 基本功能做完以后就需要遍历，游客登录可以查看50页的店铺
 {% highlight ruby %}
 for m in range(0, 50):
@@ -40,6 +40,6 @@ for m in range(0, 50):
 
 ***
 
-####结果
+#### 结果
 抓取了750条店铺链接～有了这些链接，获取店铺的名称、地址等等就很方便啦
 ![有帮助的截图]({{ site.url }}/img/dianping.png)
