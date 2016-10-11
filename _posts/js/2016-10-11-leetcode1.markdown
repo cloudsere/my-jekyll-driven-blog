@@ -1,11 +1,11 @@
 ---
 layout: article
-title:  "javascript学习笔记"
+title:  "leetcode第一题"
 date:   2016-10-11 20:59:27 +0800
 categories: js
 ---
 
-## leetcode第一题
+### leetcode第一题
 > 下决心开始刷题了，现在leetcode也支持javascript了，准备每天做一道（如果能做出来的话），把我的答案也贴在这里，如果有更好的解法拜托指正。
 
 #### 第一题 Two Sum
