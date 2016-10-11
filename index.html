@@ -30,13 +30,14 @@ layout: default
   		{% for page in (1..paginator.total_pages) %}
 
     		{% if page == paginator.page %}
-      		<li><a href="＃">{{ page }}</a></li>
+      		<li><a href="#">{{ page }}</a></li>
 
     		{% elsif page == 1 %}
       		<li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
 
     		{% else %}
-      		<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      		<li><a href="http://cloudseersparkle.cc/page{{ page }}">{{ page }}</a>
+        </li>
     		{% endif %}
 
   		{% endfor %}

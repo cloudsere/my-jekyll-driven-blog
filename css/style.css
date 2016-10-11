@@ -126,4 +126,7 @@ article > .postright{
 #ds-reset .ds-powered-by{
   display:none;
 }
+#ds-reset li.ds-post-placeholder{
+  display:none;
+}
  
