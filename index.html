@@ -36,8 +36,10 @@ layout: default
       		<li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
 
     		{% else %}
-      		<li><a href="http://cloudseersparkle.cc/page{{ page }}">{{ page }}</a>
-        </li>
+      		<li>
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+   
+          </li>
     		{% endif %}
 
   		{% endfor %}
