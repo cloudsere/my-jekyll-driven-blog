@@ -49,7 +49,7 @@ switch(sec % 7){
 	}
 	break;
 
-	case 3:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/bear.jpg);");
+	case 3:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/bear.JPG);");
 	for(var i = 0; i < postLink.length; i++){
 		postLink[i].setAttribute("style","color: #cf8f5b;")
 	}
@@ -58,7 +58,7 @@ switch(sec % 7){
 	}
 	break;
 
-	case 4:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/beach.jpg);");
+	case 4:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/beach.JPG);");
 	for(var i = 0; i < postLink.length; i++){
 		postLink[i].setAttribute("style","color: #839dac;")
 	}
@@ -70,6 +70,9 @@ switch(sec % 7){
 	default:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/cat.jpg);");
 	for(var i = 0; i < postLink.length; i++){
 		postLink[i].setAttribute("style","color: #a94442;")
+	}
+	for(var i = 0; i < navLink.length; i++){
+		navLink[i].setAttribute("style","background: #a94442;")
 	}
 	break;
 }
