@@ -1,4 +1,11 @@
-#### Where art thou
+---
+layout: article
+title:  "leetcode第一题"
+date:   2016-10-11 20:59:27 +0800
+categories: js
+---
+
+#### Where art thou 一道Freecodecamp的题
 
 > 好久没有更新了，主要右眼有点飞蚊症心情低落。。。不过解出了一道以前不会的题还是很开心的，犀牛书真的很管用！
 
