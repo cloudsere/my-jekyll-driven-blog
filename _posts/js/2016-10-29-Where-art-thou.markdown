@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  "leetcode第一题"
+title:  "一道Freecodecamp的题"
 date:   2016-10-11 20:59:27 +0800
 categories: js
 ---
