@@ -1,5 +1,5 @@
    {% include header.html %}
-	<header class="col-md-4" id="sidebar" >
+	<header class="col-md-4" id="sidebar" style="background-image: url({{site.baseurl}}/img/cat.jpg);">
 	</header>
 
 
@@ -25,7 +25,56 @@
   	 {% include footer.html %}
 	 </article>
 	
-	
+<script>
+var now = new Date();
+var sec = now.getSeconds();
+var postLink = document.getElementsByClassName("post")[0].getElementsByTagName("a");
+var navLink = document.getElementById("navigation").getElementsByTagName("a");
+switch(sec % 7){
+	case 1: document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/wish.jpg);");
+	for(var i = 0; i < postLink.length; i++){
+		postLink[i].setAttribute("style","color: #000000;")
+	}
+	for(var i = 0; i < navLink.length; i++){
+		navLink[i].setAttribute("style","background: #000000;")
+	}
+	break;
+
+	case 2: document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/jelly.jpg);");
+	for(var i = 0; i < postLink.length; i++){
+		postLink[i].setAttribute("style","color: #286090;")
+	}
+	for(var i = 0; i < navLink.length; i++){
+		navLink[i].setAttribute("style","background: #286090;")
+	}
+	break;
+
+	case 3:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/bear.jpg);");
+	for(var i = 0; i < postLink.length; i++){
+		postLink[i].setAttribute("style","color: #cf8f5b;")
+	}
+	for(var i = 0; i < navLink.length; i++){
+		navLink[i].setAttribute("style","background: #cf8f5b;")
+	}
+	break;
+
+	case 4:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/beach.jpg);");
+	for(var i = 0; i < postLink.length; i++){
+		postLink[i].setAttribute("style","color: #839dac;")
+	}
+	for(var i = 0; i < navLink.length; i++){
+		navLink[i].setAttribute("style","background: #839dac;")
+	}
+	break;
+
+	default:document.getElementsByTagName("header")[0].setAttribute("style","background-image: url({{site.baseurl}}/img/cat.jpg);");
+	for(var i = 0; i < postLink.length; i++){
+		postLink[i].setAttribute("style","color: #a94442;")
+	}
+	break;
+}
+
+</script>	
 
 
 

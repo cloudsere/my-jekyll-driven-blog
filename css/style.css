@@ -47,10 +47,6 @@ header,article{
 }
 
 header {
-  position: relative;
-  float:left;
-  width: 35%;
-  background-image: url({{site.baseurl}}/img/cat.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -65,7 +61,7 @@ header {
     width: 100%;
   }
   header {
-    height: 50%;
+    height: 30%;
   }
 }
 

@@ -1,16 +1,13 @@
 ---
 layout: article
 title:  "一道Freecodecamp的题"
-date:   2016-10-11 20:59:27 +0800
+date:   2016-10-29 20:59:27 +0800
 categories: js
 ---
 
-#### Where art thou 一道Freecodecamp的题
-
-> 好久没有更新了，主要右眼有点飞蚊症心情低落。。。不过解出了一道以前不会的题还是很开心的，犀牛书真的很管用！
+今天介绍一道Freecodecamp的题的解法～好久没有更新了，主要右眼有点飞蚊症心情低落。。。不过解出了一道以前不会的题还是很开心的，犀牛书真的很管用！
 
 这道题来自[FreeCodeCamp](https://www.freecodecamp.cn)，一个很棒的GitHub免费编程学习项目，题目如下：   
-
 
 
 写一个 function，它遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性-值对（第二个参数）的所有对象的数组。如果返回的数组中包含 source 对象的属性-值对，那么此对象的每一个属性-值对都必须存在于 collection 的对象中。
@@ -36,6 +33,7 @@ function where(collection, source) {
 ~~~
 
   
+    
 
 这里最重要的就是给第一层的for循环设置一个标签，然后用`continue labelname`的格式，重新开始一次循环。  
 
