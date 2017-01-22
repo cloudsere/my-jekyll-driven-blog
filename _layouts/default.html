@@ -26,6 +26,22 @@
 	 </article>
 	
 <script>
+function preloader(){
+			var i =0;
+			var imgObj = new Image();
+			var images = new Array();
+			images[0] = "{{site.baseurl}}/img/wish.jpg";
+			images[1] = "site.baseurl}}/img/jelly.jpg";
+			images[2] = "site.baseurl}}/img/bear.JPG";
+			images[3] = "site.baseurl}}/img/beach.JPG";
+			images[4] = "{{site.baseurl}}/img/cat.jpg";
+
+			for(i = 0; i < images.length; i++){
+				imgObj.onload = console.log("loaded");
+				imgObj.src = images[i];
+			}
+		};
+preloader();
 var now = new Date();
 var sec = now.getSeconds();
 var postLink = document.getElementsByClassName("post")[0].getElementsByTagName("a");
