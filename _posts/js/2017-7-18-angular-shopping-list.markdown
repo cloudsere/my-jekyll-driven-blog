@@ -31,4 +31,35 @@ app.controller('shopListCtrl',function($scope){
 
 其次就是浮动后面一定要清除浮动 !important
 
+<hr/>
+
+再接下来就是为了重新更新博客，在公司的电脑上再配置一遍jekyll的环境
+这个过程可以想见总是会遇到问题的，把“这样做就没问题”的直通终点步骤记下来
+
+1. 安装brew
+``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
+
+2. 更新ruby到新版本<br/>
+```brew install ruby ```
+
+3. 安装jekyll<br/>
+``` gem install jekyll ```
+``` gem install jekyll-paginate ```
+
+4. 克隆项目<br/>
+``` git clone https://github.com/cloudsere/jekyll-lesson.git ```
+
+5. cd jekyll-lesson
+
+6. 开始开发<br/>
+``` jekyll serve ```
+
+7. git add
+
+8. git commit -m "  "
+
+9. git push
+
+这样就更新了博客了！话说我忘记博客的域名在哪里买的了。。。万一要续费就完蛋惹（哭）
+
 
