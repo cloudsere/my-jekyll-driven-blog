@@ -2,7 +2,7 @@
 layout: article
 title:  "日文分词和TF-IDF处理"
 date:   2017-1-23 12:12:07 +0800
-categories: python
+categories: js
 ---
 
 上一篇文章AKB唱了啥是分析的结果，这篇文章主要用于回顾总结爬虫、日文分词和TF-IDF处理的知识点。

@@ -8,7 +8,10 @@ body {
 	  font:14px Helvetica,Arial,Sans-serif;
 	  overflow-x: hidden;
 }
-img {border:none;}
+img {
+  border:none;
+  width: 100%;
+}
 ul.post{
   padding:10px 50px;
 }
@@ -24,6 +27,8 @@ ul.post a{
 ul.post li {
   list-style-type: none;
   border-bottom: 1px solid #eeeeee;
+  padding-bottom: 5%;
+  margin-top: 5%;
 }
 
 ul.post .meta {
@@ -82,16 +87,15 @@ article > .postright{
     overflow: visible;
   }
 }
-
+#footer {
+  margin:10% 10% 0 10%;
+}
+#footer hr{
+  margin-bottom: 100px;
+}
 #footer p {
   font-weight:bold;
 }
-
-#footer {
-
-  margin:0 10%;
-}
-
 #navigation {
       position:relative;
       top:6px;

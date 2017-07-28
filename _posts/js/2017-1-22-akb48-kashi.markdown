@@ -2,7 +2,7 @@
 layout: article
 title:  "AKB都唱了什么歌？"
 date:   2017-1-22 10:32:27 +0800
-categories: python
+categories: js
 ---
 
 #### 骚年，听说过偶像吗？

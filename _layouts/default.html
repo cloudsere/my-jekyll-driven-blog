@@ -13,13 +13,11 @@
 
 		<li><a href='{{site.baseurl}}/' class="{% if page.url == '/' %}current{% endif %}">home</a></li>
 		
-		<li><a href='{{site.baseurl}}/python.html'  class="{% if page.url == '/python.html' %}current{% endif %}">python</a></li>
-		<li><a href='{{site.baseurl}}/js.html'  class="{% if page.url contains 'js' or page.url contains 'recently-written' %}current{% endif %}">js</a></li>
+		<li><a href='{{site.baseurl}}/js.html'  class="{% if page.url contains 'js' or page.url contains 'recently-written' %}current{% endif %}">programme</a></li>
 		<li><a href='{{site.baseurl}}/film.html'  class="{% if page.url contains 'film' %}current{% endif %}">film</a></li>
 		
 		</ul>
 		</div>
-
   		{{content}}
   		</div>
   	 {% include footer.html %}

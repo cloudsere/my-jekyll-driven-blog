@@ -2,24 +2,7 @@
 layout: default
 ---
 <div class="col-md-10 col-md-offset-1">
-<h2 style="margin-bottom:20px;">{{page.title}}</h2>
-
+<h3 style="margin-bottom:20px;">{{page.title}}</h3>
 {{content}}
 </div>
 
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"cloudseer"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = false;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('#footer')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->

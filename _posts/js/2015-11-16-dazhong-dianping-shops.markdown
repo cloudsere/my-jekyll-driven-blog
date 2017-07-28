@@ -2,7 +2,7 @@
 layout: article
 title:  "使用beautifulsoup抓取大众点评广州美食"
 date:   2016-10-1 10:32:27 +0800
-categories: python
+categories: js
 ---
 #### 伪装浏览器
 大众点评是反爬虫的，所以需要伪装成浏览器。
